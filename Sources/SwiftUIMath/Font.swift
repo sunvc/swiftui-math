@@ -16,6 +16,11 @@ extension Math {
 
     public let name: Name
     public let size: CGFloat
+
+    public init(name: Name, size: CGFloat) {
+      self.name = name
+      self.size = size
+    }
   }
 }
 
