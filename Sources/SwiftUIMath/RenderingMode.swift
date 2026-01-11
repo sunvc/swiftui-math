@@ -9,7 +9,7 @@ extension Math {
     case multicolor(base: SwiftUI.Color)
 
     /// Multicolor rendering using the view's primary color as the base.
-    static var multicolor: Self {
+    public static var multicolor: Self {
       .multicolor(base: .primary)
     }
   }
