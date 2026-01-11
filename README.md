@@ -126,11 +126,12 @@ And then adding the product to any target that needs access to the library:
 
 SwiftUIMath builds on prior work in native math rendering on Apple platforms:
 
-- [iosMath](https://github.com/kostub/iosMath) laid the groundwork for native math layout and rendering.
-- [SwiftMath](https://github.com/mgriebling/SwiftMath) brought these ideas into the Swift ecosystem and inspired
-  this project.
+- [iosMath](https://github.com/kostub/iosMath) laid the groundwork for native math
+  layout and rendering.
+- [SwiftMath](https://github.com/mgriebling/SwiftMath), originally forked by this
+  project, brought these ideas into the Swift ecosystem and inspired it.
 
-This work would not be possible without the contributions of these projects.
+This work would not be possible without these projects and their contributors.
 
 ## License
 
