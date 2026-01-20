@@ -1329,6 +1329,8 @@ extension Math {
         let char = self.nextCharacter()
         if singleChars.firstIndex(of: char) != nil {
           return String(char)
+        } else if char == "\n" || char == "\r" {
+          return "\\"
         } else {
           self.unlookCharacter()
         }

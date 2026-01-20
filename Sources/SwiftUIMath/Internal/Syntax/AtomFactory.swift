@@ -731,6 +731,18 @@ extension Math {
           table.setAlignment(.left, forColumn: 1)
 
           return table
+        } else if env == "align" || env == "align*" {
+          // align environment usually has pairs of columns (rl rl ...)
+          table.interRowAdditionalSpacing = 1
+          table.interColumnSpacing = 0
+          for i in 0..<table.numberOfColumns {
+            if i % 2 == 0 {
+              table.setAlignment(.right, forColumn: i)
+            } else {
+              table.setAlignment(.left, forColumn: i)
+            }
+          }
+          return table
         } else if env == "displaylines" || env == "gather" {
           if table.numberOfColumns != 1 {
             let message = "\(env) environment can only have 1 column"
